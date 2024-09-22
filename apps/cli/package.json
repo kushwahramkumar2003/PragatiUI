@@ -1,0 +1,25 @@
+{
+  "name": "pragatiui-cli",
+  "version": "0.1.0",
+  "bin": {
+    "pragatiui": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "dev": "tsup src/index.ts --format cjs --watch --dts",
+    "lint": "eslint \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.5",
+    "@types/node": "^18.11.9",
+    "eslint": "^8.28.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  }
+}
