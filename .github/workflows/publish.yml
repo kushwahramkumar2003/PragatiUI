@@ -1,14 +1,16 @@
-name: Publish to npm
+name: Publish to npm and Deploy Docs
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'packages/ui/**'
+      - 'packages/ui/**'  # Trigger when UI library changes
+      - 'apps/docs/**'    # Trigger when docs app changes
 
 jobs:
-  publish:
+  publish-ui:
+    if: "contains(github.event.head_commit.message, '[skip npm]') == false"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
