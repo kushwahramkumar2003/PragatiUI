@@ -1,7 +1,7 @@
 "use client";
 import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@pragatiui/ui";
-import Card from "../../../../packages/ui/src/card";
+import Card from "../../../../packages/ui/src/components/card";
 
 export default function Home() {
   return (
