@@ -13,6 +13,7 @@ export async function add(components: string[]) {
     process.exit(1);
   }
 
+  //parse data from pragatiui.config.json
   const config: Config = JSON.parse(fs.readFileSync(configPath, "utf-8"));
 
   for (const component of components) {
