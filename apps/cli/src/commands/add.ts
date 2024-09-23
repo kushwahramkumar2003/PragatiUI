@@ -94,7 +94,7 @@ export async function add(components: string[]) {
   for (const component of components) {
     try {
       // Fetch component file from GitHub
-      const componentUrl = `${GITHUB_RAW_CONTENT_URL}/${component}.tsx`;
+      const componentUrl = `${GITHUB_RAW_CONTENT_URL}/components/${component}.tsx`;
       const response = await axios.get(componentUrl);
       const componentContent = response.data;
 
@@ -111,7 +111,7 @@ export async function add(components: string[]) {
 
       // Check for dependencies
       try {
-        const dependenciesUrl = `${GITHUB_RAW_CONTENT_URL}/${component}.dependencies.json`;
+        const dependenciesUrl = `${GITHUB_RAW_CONTENT_URL}/metadata/${component}.dependencies.json`;
         const dependenciesResponse = await axios.get(dependenciesUrl);
         const dependencies = dependenciesResponse.data.dependencies;
 

@@ -1,30 +1,28 @@
-import fs from "fs";
-import path from "path";
+import axios from "axios";
 import { Config } from "../types";
 
-// TODO: Add support for installing dependencies
-export function list() {
-  const configPath = path.join(process.cwd(), "pragatiui.config.json");
-  if (!fs.existsSync(configPath)) {
-    console.error(
-      "pragatiui.config.json not found. Run `pragatiui-cli init` first."
-    );
-    process.exit(1);
+const GITHUB_API_URL =
+  "https://api.github.com/repos/kushwahramkumar2003/PragatiUI/contents/packages/ui/src/components";
+
+export async function list() {
+  try {
+    const response = await axios.get(GITHUB_API_URL);
+    const files = response.data;
+
+    const components = files
+      .filter((file: { name: string }) => file.name.endsWith(".tsx"))
+      .map((file: { name: string }) => file.name.replace(".tsx", ""));
+
+    if (components.length === 0) {
+      console.log("No components found in the PragatiUI repository.");
+      return;
+    }
+
+    console.log("Available components:");
+    components.forEach((component: string) => console.log(`- ${component}`));
+  } catch (error) {
+    //@ts-ignore
+    console.error("Error fetching components from GitHub:", error.message);
+    console.error("Please check your internet connection or try again later.");
   }
-
-  const config: Config = JSON.parse(fs.readFileSync(configPath, "utf-8"));
-  const componentDir = path.join(process.cwd(), config.pragatiUIPath);
-
-  if (!fs.existsSync(componentDir)) {
-    console.log("PragatiUI components directory not found.");
-    return;
-  }
-
-  const components = fs
-    .readdirSync(componentDir)
-    .filter((file) => file.endsWith(".tsx"))
-    .map((file) => path.basename(file, ".tsx"));
-
-  console.log("Available components:");
-  components.forEach((component) => console.log(`- ${component}`));
 }
