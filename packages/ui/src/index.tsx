@@ -1,4 +1,5 @@
-export * from './button';
-export { cn } from './utils';
+export * from "./button";
+export * from "./accordion";
+export { cn } from "./utils";
 
-import './globals.css';
+import "./globals.css";
