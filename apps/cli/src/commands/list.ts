@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { Config } from "../types";
 
+// TODO: Add support for installing dependencies
 export function list() {
   const configPath = path.join(process.cwd(), "pragatiui.config.json");
   if (!fs.existsSync(configPath)) {
