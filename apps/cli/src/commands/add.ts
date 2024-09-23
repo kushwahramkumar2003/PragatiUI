@@ -3,6 +3,7 @@ import path from "path";
 import { execSync } from "child_process";
 import { Config } from "../types";
 
+// TODO: Add support for installing dependencies
 export async function add(components: string[]) {
   const configPath = path.join(process.cwd(), "pragatiui.config.json");
   if (!fs.existsSync(configPath)) {
