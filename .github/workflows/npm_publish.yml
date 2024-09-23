@@ -1,0 +1,42 @@
+name: Publish CLI to npm
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "apps/cli/**"
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Turborepo
+        run: npm run build
+
+      - name: Run tests
+        run: npm test
+        working-directory: apps/cli
+
+      - name: Publish to npm
+        run: |
+          cd apps/cli
+          if [ -z "$(npm view pragatiui-cli versions | grep $(node -p "require('./package.json').version"))" ]; then
+            npm publish --access public
+          else
+            echo "Version already exists. Skipping publish."
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
