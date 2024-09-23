@@ -55,7 +55,7 @@ export async function add(components: string[]) {
     }
   }
 
-  // Update global CSS file
+  // Update global CSS file if it exists
   const globalCSSPath = path.join(process.cwd(), config.cssPath);
   if (fs.existsSync(globalCSSPath)) {
     const cssContent = fs.readFileSync(globalCSSPath, "utf-8");
