@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { prompt } from "inquirer";
+import inquirer from "inquirer";
 import { Config } from "../types";
 
 export async function init() {
-  const answers = await prompt([
+  const answers = await inquirer.prompt([
     {
       type: "input",
       name: "componentPath",
