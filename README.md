@@ -89,16 +89,16 @@ For a full list of CLI commands and options, run `pragatiui-cli --help` or visit
 
 ## 📚 Documentation
 
-Comprehensive documentation, including getting started guides, component API references, and advanced topics, can be found at our [official documentation site](https://pragatiui.dev/docs).
+Comprehensive documentation, including getting started guides, component API references, and advanced topics, can be found at our [official documentation site](https://pragati-ui.vercel.app/docs).
 
 Key documentation sections:
 
-- [Getting Started](https://pragatiui.dev/docs/getting-started)
-- [Component Library](https://pragatiui.dev/docs/components)
-- [Theming Guide](https://pragatiui.dev/docs/theming)
-- [CLI Reference](https://pragatiui.dev/docs/cli)
-- [API Documentation](https://pragatiui.dev/docs/api)
-- [Examples &amp; Recipes](https://pragatiui.dev/docs/examples)
+- [Getting Started](https://pragati-ui.vercel.app/docs/introduction)
+- [Component Library](https://pragati-ui.vercel.app/components)
+<!-- - [Theming Guide](https://pragatiui.dev/docs/theming) -->
+- [CLI Reference](https://pragati-ui.vercel.app/docs/cli)
+- [API Documentation](https://pragati-ui.vercel.app/docs/api)
+- [Examples &amp; Recipes](https://pragati-ui.vercel.app/docs/usage)
 
 ## 👥 Contributing
 
