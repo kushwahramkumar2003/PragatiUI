@@ -76,16 +76,13 @@ PragatiUI CLI is a powerful tool to help you manage components, themes, and proj
 
 ```shellscript
 # Initialize PragatiUI in your project
-pragatiui-cli init
+npx pragatiui-cli init
 
 # Add a component to your project
-pragatiui-cli add Button
+npx pragatiui-cli add button
 
 # List available components
-pragatiui-cli list
-
-# Generate a custom theme
-pragatiui-cli theme create my-theme
+npx pragatiui-cli list
 ```
 
 For a full list of CLI commands and options, run `pragatiui-cli --help` or visit our [CLI documentation](https://pragatiui.dev/docs/cli).
@@ -101,7 +98,7 @@ Key documentation sections:
 - [Theming Guide](https://pragatiui.dev/docs/theming)
 - [CLI Reference](https://pragatiui.dev/docs/cli)
 - [API Documentation](https://pragatiui.dev/docs/api)
-- [Examples & Recipes](https://pragatiui.dev/docs/examples)
+- [Examples &amp; Recipes](https://pragatiui.dev/docs/examples)
 
 ## 👥 Contributing
 
@@ -124,19 +121,3 @@ PragatiUI is open-source software licensed under the [MIT license](LICENSE).
 ---
 
 Built with ❤️ by the PragatiUI team and contributors. Happy coding! 🎉
-
-```plaintext
-
-This README provides a comprehensive overview of the PragatiUI platform, including:
-
-1. A brief introduction explaining what PragatiUI is and its key features.
-2. Installation instructions for both the core package and CLI.
-3. A basic usage example to get users started quickly.
-4. An overview of the CLI functionality with common commands.
-5. Links to the documentation and its key sections.
-6. Information on how to contribute to the project.
-7. Licensing information.
-8. Links to stay connected with the PragatiUI community.
-
-The use of emojis and clear formatting makes the README visually appealing and easy to navigate. This README serves as a great starting point for users to understand what PragatiUI is and how to get started with it.
-```
