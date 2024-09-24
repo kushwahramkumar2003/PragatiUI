@@ -39,7 +39,14 @@ export function Navbar() {
             </div>
           </div>
           <div className="hidden md:block">
-            <Button>Get Started</Button>
+            <Button
+              onClick={() => {
+                window.location.href =
+                  "https://pragati-ui.vercel.app/docs/introduction";
+              }}
+            >
+              Get Started
+            </Button>
           </div>
           <div className="md:hidden">
             <button

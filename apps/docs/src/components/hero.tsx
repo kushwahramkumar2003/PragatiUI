@@ -33,10 +33,25 @@ export function Hero() {
               </motion.p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Button size="lg">Get started</Button>
+                  <Button
+                    size="lg"
+                    onClick={() => {
+                      window.location.href =
+                        "https://pragati-ui.vercel.app/docs/introduction";
+                    }}
+                  >
+                    Get started
+                  </Button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Button variant="outline" size="lg">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => {
+                      window.location.href =
+                        "https://pragati-ui.vercel.app/docs/introduction";
+                    }}
+                  >
                     Learn more
                   </Button>
                 </div>

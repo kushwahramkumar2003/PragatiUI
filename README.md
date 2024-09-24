@@ -68,7 +68,7 @@ function App() {
 export default App;
 ```
 
-For more detailed usage instructions and component API, please refer to our [official documentation](https://pragatiui.dev/docs).
+For more detailed usage instructions and component API, please refer to our [official documentation](https://pragati-ui.vercel.app/docs).
 
 ## 🖥 CLI
 
@@ -85,7 +85,7 @@ npx pragatiui-cli add button
 npx pragatiui-cli list
 ```
 
-For a full list of CLI commands and options, run `pragatiui-cli --help` or visit our [CLI documentation](https://pragatiui.dev/docs/cli).
+For a full list of CLI commands and options, run `pragatiui-cli --help` or visit our [CLI documentation](https://pragati-ui.vercel.app/docs/cli).
 
 ## 📚 Documentation
 
