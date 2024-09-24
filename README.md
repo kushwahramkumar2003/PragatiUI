@@ -1,6 +1,6 @@
 # 🎨 PragatiUI: Empowering Modern Web Development
 
-![PragatiUI Logo](https://pragatiui.dev/logo.png)
+![PragatiUI Logo](https://pragati-ui.vercel.app/_next/image?url=%2Fpragatiui-1.png&w=128&q=75)
 
 [![npm version](https://img.shields.io/npm/v/pragatiui.svg?style=flat-square)](https://www.npmjs.com/package/pragatiui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
