@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const navItems = [
   { name: "Components", href: "/components" },
@@ -22,7 +23,13 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-gray-900">
-              PragatiUI
+              {/* PragatiUI */}
+              <Image
+                src="/pragatiui-1.png"
+                alt="PragatiUI"
+                width={100}
+                height={32}
+              />
             </Link>
           </div>
           <div className="hidden md:block">

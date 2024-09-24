@@ -6,10 +6,19 @@ import { Navbar } from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PragatiUI - Beautiful UI components for your Next.js projects",
+  title: "PragatiUI Documentation",
   description:
-    "PragatiUI provides a set of accessible, reusable, and composable React components that make it super easy to create websites and apps.",
+    "Official documentation for PragatiUI - A modern React component library",
+  manifest: "./manifest.ts",
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
+
+// export const metadata = {
+//   icon: "/favicon.ico",
+//   title: "PragatiUI - Beautiful UI components for your Next.js projects",
+//   description:
+//     "PragatiUI provides a set of accessible, reusable, and composable React components that make it super easy to create websites and apps.",
+// };
 
 export default function RootLayout({
   children,
@@ -19,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <link rel="icon" href="/favicon.ico" sizes="any" />;
         <Navbar />
         {children}
         <Footer />
