@@ -112,11 +112,9 @@ PragatiUI is open-source software licensed under the [MIT license](LICENSE).
 
 ## 🌐 Stay Connected
 
-- [Website](https://pragatiui.dev)
-- [GitHub](https://github.com/pragatiui/pragatiui)
-- [npm](https://www.npmjs.com/package/pragatiui)
-- [Twitter](https://twitter.com/pragatiui)
-- [Discord Community](https://discord.gg/pragatiui)
+- [Website](https://pragati-ui.vercel.app)
+- [GitHub](https://github.com/kushwahramkumar2003/PragatiUI)
+- [npm](https://www.npmjs.com/package/pragatiui-cli)
 
 ---
 

@@ -13,6 +13,7 @@ const sections = [
   { id: "theming", title: "Theming" },
   { id: "api", title: "API Reference" },
   { id: "examples", title: "Examples" },
+  { id: "cli", title: "CLI Usage" },
 ];
 
 export function DocsList() {
