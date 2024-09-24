@@ -22,7 +22,7 @@ export default function ComponentsPage() {
           <Button
             variant="default"
             onClick={() => {
-              window.location.href = "/docs/components/installation";
+              window.location.href = "/docs/installation";
             }}
           >
             View Installation Guide
