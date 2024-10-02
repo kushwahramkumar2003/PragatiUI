@@ -37,7 +37,7 @@ export function DocsLayout({ children }: { children: React.ReactNode }) {
           </div>
         </aside>
 
-        <main className="flex-grow p-6 pt-20 lg:pt-6  overflow-y-auto lg:pt-14">
+        <main className="flex-grow p-6 pt-20 lg:pt-14  overflow-y-auto ">
           {children}
         </main>
       </div>
