@@ -36,7 +36,7 @@ interface ComponentDetailsProps {
 }
 
 export function ComponentDetails({ selectedComponent }: ComponentDetailsProps) {
-  const [showCode, setShowCode] = useState(false);
+  // const [showCode, setShowCode] = useState(false);
   const [copied, setCopied] = useState(false);
   const { toast } = useToast();
 
@@ -340,8 +340,9 @@ const { toast } = useToast()
               <div className="mt-4">
                 <h4 className="text-lg font-semibold mb-2">Component Props</h4>
                 <p className="text-sm text-muted-foreground">
-                  For detailed prop information, please refer to the component's
-                  TypeScript definition or the official documentation.
+                  For detailed prop information, please refer to the
+                  component&apos;s TypeScript definition or the official
+                  documentation.
                 </p>
               </div>
             </TabsContent>
